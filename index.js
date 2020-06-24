@@ -8,6 +8,9 @@
  * With custom integrations, we don't have a way to find out who installed us, so we can't message them :(
  */
 
+process.env.BOT_TOKEN = 'xoxb-292658466116-1204378957506-CDu5NP0lN41EiPMda40277L0;
+process.env.GOOGLE_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTlMQV-CPgObIcvmj0HK4uOLRy13AiVaBKmw1jfIn52tIEtxQdDM16zV9wel19CoXiFiVaCXQerZ1v7/pubhtml';
+
 function onInstallation(bot, installer) {
     if (installer) {
         bot.startPrivateConversation({user: installer}, function (err, convo) {
